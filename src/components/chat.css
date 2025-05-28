@@ -1,0 +1,155 @@
+.chat-main-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    text-align: start;
+    font-size: 16px;
+    font-weight: bold;
+    color: #191919;
+    flex-shrink: 0;
+}
+
+.chat {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 8px;
+    max-width: 380px;
+    height: 100%;
+}
+
+.chat.support {
+    flex-flow: row-reverse nowrap;
+}
+
+.chat .user {
+    flex-flow: row-reverse nowrap;
+}
+
+.chat-container {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.chat-element {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+time {
+    font-size: 12px;
+    height: 40px;
+    text-align: center;
+    color: #ABABAB;
+    width: 100%;
+}
+
+time.chat-time {
+    height: 20px;
+}
+
+.chat-from {
+    font-size: 12px;
+    text-align: center;
+    color: #ABABAB;
+    width: 100%;
+    height: 20px;
+}
+
+.chat-input-container {
+    padding: 16px;
+    border: 1px solid #E6E7E6;
+    border-radius: 12px;
+
+}
+
+.chat-input-container:focus-within {
+    border: 1px solid darkmagenta;
+}
+
+.chat-bubble {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.chat-bubble > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    margin: 8px;
+}
+
+.chat-bubble > div {
+    border: 1px solid #d1d0d0;
+    border-radius: 12px;
+    flex-grow: 1;
+    padding: 8px;
+}
+
+.message-form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-form-container > textarea {
+    border: none;
+    width: 100%;
+    /*handling the focus outline in the parent :focus-within*/
+    outline: 0;
+    height: auto;
+
+}
+
+.message-form-container > button {
+    border: none;
+    background: transparent;
+}
+
+.icon-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.icon-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.icon-container button {
+    border: none;
+    background: transparent;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.icon-container button:hover {
+    background-color: #f0f0f0;
+}
+
+.icon-container button:focus {
+    outline: 2px solid #0066cc;
+    background-color: #f0f0f0;
+}
+
+.icon-container button:active {
+    background-color: #e0e0e0;
+}
+
+
+
